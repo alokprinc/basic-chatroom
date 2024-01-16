@@ -77,11 +77,11 @@
         }
       });
       socket.on('chat message', (m) => {
-        console.log(m);
+       
         const { user, msg } = m;
         const item = document.createElement('li');
         item.textContent = `${user} : ${msg}`;
-        console.log('yo');
+        
         messages.appendChild(item);
         window.scrollTo(0, document.body.scrollHeight);
       });
